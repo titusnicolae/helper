@@ -11,10 +11,10 @@ def createHTMLtableFromFile():
   fin = open(sys.argv[1])
   out=['<table>\n']
   for line in fin:
-    tr=["<tr>\n"]
+    tr=["  <tr>\n"]
     for el in line.split():
-      tr.append("<td> %s </td>\n" % (el))
-    tr.append("</tr>\n")
+      tr.append("    <td> %s </td>\n" % (el))
+    tr.append("  </tr>\n")
     out+=tr
   out.append("</table>")
   fout=open(sys.argv[2],"w")
