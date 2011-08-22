@@ -1,4 +1,5 @@
 #!/usr/bin/python
+#inserts tabs and newlines in xml to make it readable
 import re
 import sys
 def tab(t):
